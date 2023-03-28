@@ -3,5 +3,6 @@
 
 ```mermaid
 classDiagram
-
+    class Test
+    <<interface>> Test
 ```
