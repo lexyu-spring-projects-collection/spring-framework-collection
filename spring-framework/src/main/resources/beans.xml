@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--  di package  -->
+    <!-- declare a beab, call constructor only once   -->
+    <bean id="mathCheatObjectValue" class="com.lex.di.MathCheat"/>
+
+    <!-- Setter injection -->
+    <bean id="stu" class="com.lex.di.Student">
+        <property name="id" value="1001"/>
+        <property name="mathCheat" ref="mathCheatObjectValue">
+<!--            <bean class="com.lex.di.MathCheat"/> will call constructor -->
+        </property>
+    </bean>
+
+    <bean id="friend" class="com.lex.di.Friend">
+        <property name="cheat" ref="mathCheatObjectValue">
+<!--            <bean class="com.lex.di.MathCheat"/> will call constructor, total twice -->
+        </property>
+    </bean>
+
+<!--    <bean id="student" class="com.lex.di.Student">-->
+<!--        <property name="studentName" value="Lex Yu"/>-->
+<!--        <property name="id" value="1"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="copy" class="com.lex.di.Student">-->
+<!--        <property name="studentName" value="Lex Copy"/>-->
+<!--        <property name="id" value="2"/>-->
+<!--    </bean>-->
+
+    <!-- Constructor injection -->
+
+    <bean id="student" class="com.lex.di.Student">
+        <constructor-arg name="studentName" value="Student" type="java.lang.String"/>
+        <constructor-arg name="id" value="1" type="int"/>
+    </bean>
+
+    <bean id="lex" class="com.lex.di.Student">
+<!--        <constructor-arg name="studentName" value="Lex"/>-->
+        <constructor-arg name="id" value="2" type="int"/>
+    </bean>
+
+    <!--  ioc package -->
+<!--    <bean id="cht" class="com.lex.ioc.Cht">-->
+<!--    </bean>-->
+
+<!--    <bean id="phone" class="com.lex.ioc.Phone">-->
+<!--    </bean>-->
+
+<!--    <bean id="home1" class="com.lex.ioc.Phone">-->
+<!--    </bean>-->
+
+<!--    <bean id="home2" class="com.lex.ioc.Cht">-->
+<!--    </bean>-->
+
+<!--    <bean id="home3" class="com.lex.ioc.Company">-->
+<!--    </bean>-->
+</beans>
