@@ -1,0 +1,7 @@
+student:
+  name: Lex(YAML)
+  interestedCourse: Rust(YAML)
+  hobby: Running(YAML)
+
+teacher:
+  name: Lex(YAML)

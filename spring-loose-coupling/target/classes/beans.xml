@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- declare a beab, call constructor only once   -->
+    <bean id="mathCheat" class="com.lex.loose.MathCheat"/>
+    <bean id="scienceCheat" class="com.lex.loose.ScienceCheat"/>
+    <bean id="javaCheat" class="com.lex.loose.JavaCheat"/>
+    <bean id="cheat" class="com.lex.loose.Cheat" abstract="true"/>
+
+    <!-- Constructor injection -->
+    <bean id="stu" class="com.lex.loose.Student">
+        <property name="cheat" ref="javaCheat"/>
+    </bean>
+    
+</beans>

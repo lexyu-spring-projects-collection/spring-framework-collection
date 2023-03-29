@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.lex.ioc</groupId>
-    <artifactId>spring-ioc-di</artifactId>
+    <groupId>com.lex.practice</groupId>
+    <artifactId>spring-autowiring-qualifier</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -13,14 +13,12 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
+    <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
             <version>6.0.7</version>
         </dependency>
     </dependencies>
-
 </project>
