@@ -9,10 +9,15 @@
 
     <context:annotation-config/>
 
-    <bean id="yml" class="org.springframework.beans.factory.config.YamlPropertiesFactoryBean">
-        <property name="resources" value="classpath:student-info.yml"/>
+    <bean id="multi-yml" class="org.springframework.beans.factory.config.YamlPropertiesFactoryBean">
+        <property name="resources">
+            <list>
+                <value>classpath:database.yml</value>
+                <value>classpath:student-info.yml</value>
+            </list>
+        </property>
     </bean>
-    <context:property-placeholder properties-ref="yml"/>
+    <context:property-placeholder properties-ref="multi-yml"/>
 
     <!--    <context:property-placeholder location="classpath:student-info.properties"/>-->
 
@@ -24,6 +29,10 @@
         <!--        <constructor-arg name="name" value="${student.name}" type="java.lang.String"/>-->
         <!--        <constructor-arg name="interestedCourse" value="${student.interestedCourse}" type="java.lang.String"/>-->
         <!--        <constructor-arg name="hobby" value="${student.hobby}" type="java.lang.String"/>-->
+    </bean>
+
+    <bean id="jdbCconfig" class="com.lex.practice.JDBCconfig">
+
     </bean>
 
 

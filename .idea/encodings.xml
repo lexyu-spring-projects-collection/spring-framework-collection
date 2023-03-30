@@ -3,6 +3,10 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/spring-autowiring-qualifier/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-autowiring-qualifier/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-bean-life-cycle/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-bean-life-cycle/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-core-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-core-annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-loose-coupling/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-loose-coupling/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-value-required-annotation/src/main/java" charset="UTF-8" />

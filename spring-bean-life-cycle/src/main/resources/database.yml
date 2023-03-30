@@ -1,0 +1,5 @@
+jdbc:
+  username: root
+  password: "00112125"
+  url: jdbc:mysql://localhost:3306/studnet_cllections?useSSL=false&serverTimezone=Asia/Taipei
+  driver: com.mysql.cj.jdbc.Driver

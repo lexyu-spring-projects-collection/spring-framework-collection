@@ -1,0 +1,5 @@
+jdbc:
+  username: root
+  password: "your_password"
+  url: jdbc:mysql://localhost:3306/college_database?useSSL=false&serverTimezone=Asia/Taipei
+  driver: com.mysql.cj.jdbc.Driver

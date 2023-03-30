@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-autowiring-qualifier" />
-        <module name="spring-loose-coupling" />
+        <module name="spring-bean-life-cycle" />
         <module name="spring-value-required-annotation" />
+        <module name="spring-core-annotation" />
+        <module name="spring-loose-coupling" />
       </profile>
     </annotationProcessing>
   </component>

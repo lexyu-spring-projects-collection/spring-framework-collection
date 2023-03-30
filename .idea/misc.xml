@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/spring-loose-coupling/pom.xml" />
         <option value="$PROJECT_DIR$/spring-autowiring-qualifier/pom.xml" />
         <option value="$PROJECT_DIR$/spring-value-required-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-core-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bean-life-cycle/pom.xml" />
       </list>
     </option>
   </component>

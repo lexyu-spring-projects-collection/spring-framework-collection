@@ -1,8 +1,6 @@
 package com.lex.practice;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.lang.NonNull;
 
 /**
  * @author : LEX_YU
@@ -10,6 +8,8 @@ import org.springframework.lang.NonNull;
  * @date : 2023/3/29
  */
 public class Student {
+
+	@Value("${student.name}")
 	private String name;
 	private String interestedCourse;
 	private String hobby;
@@ -24,23 +24,25 @@ public class Student {
 		this.hobby = hobby;
 	}
 
-	//	@Value("Lex @Value")
-	@Value("${student.name}")
+//		@Value("Lex @Value")
+//	@Value("${student.name}")
 	public void setName(String name) {
+		System.out.println("Setter Method setName");
 		this.name = name;
 	}
 
-	//	@Value("Rust @Value")
+//		@Value("Rust @Value")
 	@Value("${student.interestedCourse}")
 	public void setInterestedCourse(String interestedCourse) {
+		System.out.println("Setter Method setInterestedCourse");
 		this.interestedCourse = interestedCourse;
 	}
-
 
 	//	@Required // Spring Framework 5.1 Deprecated
 //	@Value("Running @Value")
 	@Value("${student.hobby}")
 	public void setHobby(String hobby) {
+		System.out.println("Setter Method setHobby");
 		this.hobby = hobby;
 	}
 
