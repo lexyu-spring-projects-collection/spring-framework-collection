@@ -1,6 +1,7 @@
 package com.lex.life.annotation;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.ComponentScan;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -11,16 +12,17 @@ import java.sql.SQLException;
  * @version : 0.0.1
  * @date : 2023/3/30
  */
-public class JDBCconfig {
 
+@ComponentScan
+public class JDBCconfig {
 	@Value("${jdbc.username}")
-	private String username;
+	public String username;
 	@Value("${jdbc.password}")
-	private String password;
+	public String password;
 	@Value("${jdbc.url}")
-	private String url;
+	public String url;
 	@Value("${jdbc.driver}")
-	private String driver;
+	public String driver;
 
 	public void display() {
 		System.out.printf("""
@@ -32,9 +34,10 @@ public class JDBCconfig {
 				username, password, url, driver);
 	}
 
-	public void getJDBCConnection() throws ClassNotFoundException, SQLException {
+	public Connection getJDBCConnection() throws ClassNotFoundException, SQLException {
 		Class.forName(driver);
 		Connection conn = DriverManager.getConnection(url, username, password);
 		System.out.println("Connection Successfully : " + conn);
+		return conn;
 	}
 }
