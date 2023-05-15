@@ -12,6 +12,7 @@
         <option value="$PROJECT_DIR$/spring-value-required-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring-core-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring-bean-life-cycle/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-proxy-demo/pom.xml" />
       </list>
     </option>
   </component>
