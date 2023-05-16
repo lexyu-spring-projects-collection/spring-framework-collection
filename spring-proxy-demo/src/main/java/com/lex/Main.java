@@ -17,10 +17,19 @@ public class Main {
 		// static proxy
 		Sales sales = new SalesLiveLog(new Salesman());
 		sales.doSale(new BigDecimal(1000));
+
 		System.out.println("----------------------------------------------------------------");
+
 		// java dynamic proxy (reflection)
 		SalesInvocationHandler handler = new SalesInvocationHandler(new Salesman());
 		Sales sales1 = handler.createProxy();
 		sales1.doSale(new BigDecimal(1000));
+
+		System.out.println("----------------------------------------------------------------");
+
+		// spring aop
+		Sales sales2 = new Salesman();
+		sales2.doSale(new BigDecimal(1000));
+
 	}
 }
