@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-autowiring-qualifier" />
-        <module name="spring-bean-life-cycle" />
         <module name="spring-value-required-annotation" />
-        <module name="spring-core-annotation" />
         <module name="spring-proxy-demo" />
         <module name="spring-loose-coupling" />
+        <module name="spring-autowiring-qualifier" />
+        <module name="spring-bean-life-cycle" />
+        <module name="spring-transactional-demo" />
+        <module name="spring-core-annotation" />
       </profile>
     </annotationProcessing>
   </component>
