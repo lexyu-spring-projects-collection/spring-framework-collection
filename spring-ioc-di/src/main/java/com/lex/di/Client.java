@@ -5,8 +5,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * @author : LEX_YU
- * @version : 0.0.1
- * @date : 2023/3/28
  */
 public class Client {
 	public static void main(String[] args) {
